@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ternary Operators and Constructors</title>
+</head>
+
+<body>
+    <h1>Ternary Operators and Constructors</h1>
+
+    <h2>Ride Height Checker</h2>
+
+    <p>Riders must be at least 52 centimetres tall to ride.</p>
+
+    <label for="Height">Enter the rider's height:</label>
+    <input id="Height" type="number" value="52">
+
+    <button onclick="Ride_Function()">Check Height</button>
+
+    <p id="Ride"></p>
+
+    <h2>Voting Age Checker</h2>
+
+    <p>You must be at least 18 years old to vote.</p>
+
+    <label for="Age">Enter your age:</label>
+    <input id="Age" type="number" min="0" value="18">
+
+    <button onclick="Vote_Function()">Check Voting Eligibility</button>
+
+    <p id="Vote"></p>
+
+    <h2>Keywords and Constructors</h2>
+
+    <button onclick="myFunction()">Click Here.</button>
+
+    <p id="Keywords_and_Constructors"></p>
+
+    <h2>New Keyword Assignment</h2>
+
+    <button onclick="displayDeveloper()">Click here</button>
+
+    <p id="New_and_This"></p>
+
+    <h2>Reserved Keyword Challenge</h2>
+
+    <p>
+        Click the button to display a JavaScript reserved word stored
+        as a string.
+    </p>
+
+    <button onclick="displayReservedWord()">
+        Display Reserved Word
+    </button>
+
+    <p id="ReservedKeyword"></p>
+
+    <h2>Object Constructor Challenge</h2>
+
+    <button onclick="displayBook()">
+        Display Book
+    </button>
+
+    <p id="ConstructorChallenge"></p>
+
+    <h2>Nested Functions Assignment</h2>
+
+    <p>
+        Click the text below to execute a function contained inside
+        another function.
+    </p>
+
+    <!-- This paragraph calls the outer nested function. -->
+    <p id="Nested_Function" onclick="count_Function()">
+        Click here to execute the nested function.
+    </p>
+
+    <!-- Connect the HTML page to the external JavaScript file. -->
+    <script src="JS/main.js"></script>
+</body>
+</html>
