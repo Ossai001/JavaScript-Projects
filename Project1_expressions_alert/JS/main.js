@@ -18,3 +18,9 @@ var result = 10 + 5;
 
 // Display the result of the expression.
 document.write("<p>The result of 10 + 5 is " + result + ".</p>");
+
+// This function runs when the user double-clicks the button.
+function displayMessage() {
+    document.getElementById("event-message").innerHTML =
+        "The ondblclick event was successfully executed!";
+}

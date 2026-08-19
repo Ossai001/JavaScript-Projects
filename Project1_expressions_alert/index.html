@@ -3,14 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Expressions and Alert Project</title>
+    <title>Expressions, Alert and Event Project</title>
 </head>
 
 <body>
     <h1>Basic JavaScript Project</h1>
-    <p>This project demonstrates JavaScript methods, variables and expressions.</p>
 
-    <!-- Link the HTML document to the external JavaScript file. -->
+    <p>
+        This project demonstrates JavaScript methods, variables,
+        expressions and HTML events.
+    </p>
+
+    <h2>JavaScript Event Challenge</h2>
+
+    <p id="event-message">Double-click the button below.</p>
+
+    <!-- The ondblclick event calls the displayMessage function. -->
+    <button ondblclick="displayMessage()">Double-click Me</button>
+
+    <!-- Link this HTML document to the external JavaScript file. -->
     <script src="JS/main.js"></script>
 </body>
 </html>
