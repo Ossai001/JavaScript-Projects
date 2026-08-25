@@ -3,25 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Expressions, Alert and Event Project</title>
+    <title>Scope, Time and Functions</title>
 </head>
 
 <body>
-    <h1>Basic JavaScript Project</h1>
+    <h1>JavaScript Scope, Time and Functions</h1>
+
+    <h2>Local and Global Variable Assignment</h2>
 
     <p>
-        This project demonstrates JavaScript methods, variables,
-        expressions and HTML events.
+        Open the browser console to view the global variable, local variable
+        and debugging results.
     </p>
 
-    <h2>JavaScript Event Challenge</h2>
+    <p>Press F12 and select the Console tab.</p>
 
-    <p id="event-message">Double-click the button below.</p>
+    <h2>Date Method Assignment</h2>
 
-    <!-- The ondblclick event calls the displayMessage function. -->
-    <button ondblclick="displayMessage()">Double-click Me</button>
+    <p>Click the text below to display a message based on the current hour.</p>
 
-    <!-- Link this HTML document to the external JavaScript file. -->
+    <p id="TimeMessage" onclick="displayTimeMessage()">
+        Click here to check the time.
+    </p>
+
     <script src="JS/main.js"></script>
 </body>
 </html>

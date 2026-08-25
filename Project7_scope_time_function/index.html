@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope, Time and Functions</title>
+</head>
+
+<body>
+    <h1>JavaScript Scope, Time and Functions</h1>
+
+    <h2>Local and Global Variable Assignment</h2>
+
+    <p>
+        Open the browser console to view the global variable, local variable
+        and debugging results.
+    </p>
+
+    <p>Press F12 and select the Console tab.</p>
+
+    <h2>Date Method Assignment</h2>
+
+    <p>Click the text below to display a message based on the current hour.</p>
+
+    <p id="TimeMessage" onclick="displayTimeMessage()">
+        Click here to check the time.
+    </p>
+
+    <h2>If Statement Assignment</h2>
+
+    <p>
+        Click the text below to check your JavaScript project progress.
+    </p>
+
+    <p id="ProgressMessage" onclick="checkProjectProgress()">
+        Click here to check your progress.
+    </p>
+
+    <h2>If and Else Statement Assignment</h2>
+
+    <p>
+        Enter the number of hours you studied JavaScript today.
+        Studying for two hours or more will meet your daily target.
+    </p>
+
+    <label for="StudyHours">Hours studied:</label>
+
+    <input
+        id="StudyHours"
+        type="number"
+        min="0"
+        step="0.5"
+        value="2"
+    >
+
+    <button onclick="checkStudyHours()">
+        Check Study Progress
+    </button>
+
+    <p id="StudyAdvice"></p>
+
+    <h2>Else If Assignment</h2>
+
+    <p>
+        Click the button to receive a greeting based on the current time.
+    </p>
+
+    <!-- This paragraph displays the result of the else-if function. -->
+    <p id="Time_of_day"></p>
+
+    <!-- This button calls the Time_function. -->
+    <button onclick="Time_function()">
+        Click here to get the time.
+    </button>
+
+    <!-- Link this HTML page to the external JavaScript file. -->
+    <script src="JS/main.js"></script>
+</body>
+</html>
