@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript String and Number Methods</title>
+
+    <!-- Connect the HTML page to the JavaScript file. -->
+    <script src="JS/main.js" defer></script>
+</head>
+
+<body>
+    <h1>JavaScript String and Number Methods</h1>
+
+    <h2>concat() Method</h2>
+
+    <p id="combined_sentence"></p>
+
+    <button onclick="createSentence()">Join the Strings</button>
+
+    <h2>slice() Method</h2>
+
+    <p id="sliced_sentence"></p>
+
+    <button onclick="sliceSentence()">
+        Display Part of the String
+    </button>
+
+    <h2>toUpperCase() Method</h2>
+
+    <p>
+        The toUpperCase() method converts all the letters in a string
+        to uppercase.
+    </p>
+
+    <p id="uppercase_sentence"></p>
+
+    <button onclick="convertToUppercase()">
+        Convert to Uppercase
+    </button>
+
+    <h2>search() Method</h2>
+
+    <p>
+        The search() method returns the position of the first occurrence
+        of specified text within a string.
+    </p>
+
+    <p id="search_result"></p>
+
+    <button onclick="searchSentence()">
+        Search the String
+    </button>
+
+    <h2>toPrecision() Method</h2>
+
+    <p>
+        The toPrecision() method formats a number to a specified number
+        of significant digits and returns it as a string.
+    </p>
+
+    <p id="precision_result"></p>
+
+    <button onclick="formatNumber()">
+        Format the Number
+    </button>
+
+    <h2>toFixed() Method</h2>
+
+    <p>
+        The toFixed() method formats a number using a specified number
+        of digits after the decimal point and returns a string.
+    </p>
+
+    <p id="fixed_result"></p>
+
+    <button onclick="formatDecimalNumber()">
+        Format the Decimal
+    </button>
+
+    <h2>valueOf() Method</h2>
+
+    <p>
+        The valueOf() method returns the primitive value stored inside
+        a JavaScript object.
+    </p>
+
+    <p id="value_result"></p>
+
+    <button onclick="getPrimitiveValue()">
+        Get the Primitive Value
+    </button>
+</body>
+</html>
