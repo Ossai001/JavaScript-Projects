@@ -1,0 +1,189 @@
+/* Applies consistent sizing throughout the page. */
+html {
+    font-size: 70%;
+    box-sizing: border-box;
+}
+
+/* Removes default spacing. */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+/* Styles the webpage background. */
+body {
+    min-height: 100vh;
+    background:
+        linear-gradient(135deg, #dbeafe, #eff6ff);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Positions and styles the calculator. */
+.calculator {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 500px;
+    max-width: 92%;
+
+    border: 1.2px solid darkslategray;
+    border-radius: 7px;
+
+    background-color: white;
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.25);
+
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+/* Styles the calculator display. */
+.calculator-screen {
+    width: 100%;
+    height: 80px;
+
+    border: none;
+    border-radius: 7px 7px 0 0;
+
+    background-color: black;
+    color: white;
+
+    font-size: 5rem;
+    text-align: right;
+
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+/* Keeps the disabled display clearly visible. */
+.calculator-screen:disabled {
+    opacity: 1;
+    -webkit-text-fill-color: white;
+}
+
+/* Styles every calculator button. */
+button {
+    height: 70px;
+
+    border: 1px solid darkslategray;
+    border-radius: 3px;
+
+    background-color: transparent;
+
+    background-image:
+        linear-gradient(
+            to bottom,
+            transparent,
+            transparent 50%,
+            rgba(0, 0, 0, 0.06)
+        );
+
+    color: black;
+    font-size: 3.2rem;
+
+    text-shadow:
+        0 1px rgba(255, 255, 255, 0.4);
+
+    box-shadow:
+        inset 0 0 0 1px rgba(255, 255, 255, 0.05),
+        inset 0 1px 0 0 rgba(255, 255, 255, 0.45),
+        inset 0 -1px 0 0 rgba(255, 255, 255, 0.05),
+        0 1px 0 0 rgba(255, 255, 255, 0.05);
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s,
+        transform 0.1s;
+}
+
+/* Changes buttons when hovered over. */
+button:hover {
+    background-color: #e1e1e1;
+}
+
+/* Creates a pressed-button effect. */
+button:active {
+    transform: scale(0.96);
+}
+
+/* Styles mathematical operator buttons. */
+.operator {
+    color: black;
+    background-color: lightgray;
+
+    background-image:
+        linear-gradient(
+            to bottom,
+            transparent,
+            transparent 50%,
+            rgba(0, 0, 0, 0.05)
+        );
+}
+
+/* Styles the operator hover effect. */
+.operator:hover {
+    background-color: #cbd5e1;
+}
+
+/* Styles the all-clear button. */
+.all-clear {
+    background-color: red;
+    border-color: darkslategray;
+    color: white;
+}
+
+/* Styles the all-clear hover effect. */
+.all-clear:hover {
+    background-color: darkred;
+}
+
+/* Styles and positions the equal button. */
+.equal-sign {
+    grid-area: 2 / 4 / 6 / 5;
+
+    height: 100%;
+
+    background-color: blue;
+    border-color: darkslategray;
+    color: white;
+}
+
+/* Styles the equal-button hover effect. */
+.equal-sign:hover {
+    background-color: darkblue;
+}
+
+/* Arranges the buttons into four columns. */
+.calculator-keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+
+    padding: 20px;
+}
+
+/* Adjusts the calculator for smaller screens. */
+@media screen and (max-width: 550px) {
+    html {
+        font-size: 55%;
+    }
+
+    .calculator {
+        width: 94%;
+    }
+
+    .calculator-keys {
+        grid-gap: 10px;
+        padding: 12px;
+    }
+
+    button {
+        height: 60px;
+    }
+}
