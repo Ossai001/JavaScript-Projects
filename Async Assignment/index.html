@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Async and Defer Assignment</title>
+
+    <!--
+        The defer attribute waits until the HTML document has been
+        parsed before executing defer.js.
+    -->
+    <script src="defer.js" defer></script>
+</head>
+
+<body>
+    <!-- ASYNC ASSIGNMENT -->
+
+    <h1>Async Assignment</h1>
+
+    <!-- Load the JavaScript file asynchronously. -->
+    <script src="async.js" async></script>
+
+    <p id="p1">Hello World</p>
+
+
+    <!-- DEFER CHALLENGE -->
+
+    <h1>Defer Challenge</h1>
+
+    <p id="defer-message">
+        The original paragraph text.
+    </p>
+</body>
+</html>
