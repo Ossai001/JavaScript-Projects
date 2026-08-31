@@ -1,0 +1,154 @@
+/* Removes unnecessary default spacing. */
+* {
+    box-sizing: border-box;
+}
+
+/* Styles the complete webpage. */
+body {
+    min-height: 100vh;
+    margin: 0;
+    background-color: darkblue;
+}
+
+/* Styles the main heading. */
+h1 {
+    margin: 0 0 35px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 48px;
+    text-align: center;
+}
+
+/* Styles the menu headings. */
+h3 {
+    margin-top: 0;
+    margin-bottom: 30px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+}
+
+/* Styles the text inside all div elements. */
+div {
+    color: white;
+    font-family: "Courier New", Courier, monospace;
+}
+
+/* Holds and centres the complete pizza menu. */
+#menuBG {
+    width: 750px;
+    min-height: 750px;
+    margin: 10px auto;
+    padding: 10px 0 30px;
+}
+
+/* Holds all the menu options. */
+#frmMenu {
+    display: flex;
+    flex-wrap: wrap;
+    width: 750px;
+}
+
+/* Gives each menu section equal space. */
+.menu {
+    width: 250px;
+    min-height: 270px;
+    padding: 20px;
+}
+
+/* Displays each choice on a separate line. */
+.menu label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 17px;
+    white-space: nowrap;
+}
+
+/* Adds space between the selection control and its text. */
+.menu input {
+    margin-right: 12px;
+}
+
+/* Styles and centres the Place Order button. */
+#btnOrder {
+    display: block;
+    width: 155px;
+    height: 65px;
+    margin: 0 auto 45px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Holds the receipt and total price. */
+#cart {
+    display: flex;
+    width: 750px;
+    min-height: 220px;
+    margin: 20px auto 0;
+}
+
+/* Displays the selected order on the left. */
+#showText {
+    width: 500px;
+    min-height: 200px;
+    padding-left: 175px;
+    font-size: 18px;
+    line-height: 1.35;
+}
+
+/* Styles the receipt heading inserted by JavaScript. */
+#showText h3 {
+    margin-bottom: 30px;
+}
+
+/* Displays the total price on the right. */
+#totalPrice {
+    width: 250px;
+    min-height: 200px;
+    padding-top: 5px;
+    font-size: 18px;
+}
+
+/* Styles the total heading inserted by JavaScript. */
+#totalPrice h3 {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 18px;
+    white-space: nowrap;
+}
+
+/* Adjusts the menu for smaller screens. */
+@media screen and (max-width: 780px) {
+    #menuBG,
+    #frmMenu,
+    #cart {
+        width: 100%;
+    }
+
+    #menuBG {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    #frmMenu {
+        display: block;
+    }
+
+    .menu {
+        width: 100%;
+        min-height: auto;
+    }
+
+    #cart {
+        display: block;
+    }
+
+    #showText,
+    #totalPrice {
+        width: 100%;
+        min-height: auto;
+        padding: 20px;
+    }
+}

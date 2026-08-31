@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Pizza Drill Demo</title>
+
+    <link
+        rel="stylesheet"
+        type="text/css"
+        href="Pizza_CSS/Pizza.css"
+    >
+
+    <script
+        src="Pizza_JavaScript/Pizza.js"
+        defer
+    ></script>
+</head>
+
+<body>
+
+    <div id="menuBG">
+
+        <h1>Pizza Drill Tutorial</h1>
+
+        <input
+            id="btnOrder"
+            type="button"
+            onclick="getReceipt()"
+            value="Place Order"
+        >
+
+        <form id="frmMenu">
+
+            <!-- Pizza size options. -->
+            <div class="menu size-menu">
+
+                <h3>Size:</h3>
+
+                <label>
+                    <input
+                        class="size"
+                        type="radio"
+                        name="Size"
+                        value="Personal Pizza"
+                    >
+                    Personal Pizza
+                </label>
+
+                <label>
+                    <input
+                        class="size"
+                        type="radio"
+                        name="Size"
+                        value="Small Pizza"
+                    >
+                    Small Pizza
+                </label>
+
+                <label>
+                    <input
+                        class="size"
+                        type="radio"
+                        name="Size"
+                        value="Medium Pizza"
+                    >
+                    Medium Pizza
+                </label>
+
+                <label>
+                    <input
+                        class="size"
+                        type="radio"
+                        name="Size"
+                        value="Large Pizza"
+                        checked
+                    >
+                    Large Pizza
+                </label>
+
+                <label>
+                    <input
+                        class="size"
+                        type="radio"
+                        name="Size"
+                        value="Extra Large Pizza"
+                    >
+                    Extra Large Pizza
+                </label>
+
+            </div>
+
+            <!-- Vegetable topping options. -->
+            <div class="menu vegetable-menu">
+
+                <h3>Vegetables:</h3>
+
+                <label>
+                    <input
+                        class="toppings"
+                        type="checkbox"
+                        name="Topping"
+                        value="Mushrooms"
+                    >
+                    Mushrooms
+                </label>
+
+                <label>
+                    <input
+                        class="toppings"
+                        type="checkbox"
+                        name="Topping"
+                        value="Onions"
+                    >
+                    Onions
+                </label>
+
+                <label>
+                    <input
+                        class="toppings"
+                        type="checkbox"
+                        name="Topping"
+                        value="Tomatoes"
+                    >
+                    Tomatoes
+                </label>
+
+                <label>
+                    <input
+                        class="toppings"
+                        type="checkbox"
+                        name="Topping"
+                        value="Olives"
+                    >
+                    Olives
+                </label>
+
+                <label>
+                    <input
+                        class="toppings"
+                        type="checkbox"
+                        name="Topping"
+                        value="Green Peppers"
+                    >
+                    Green Peppers
+                </label>
+
+            </div>
+
+            <!-- Meat topping options. -->
+            <div class="menu meat-menu">
+
+                <h3>Meats:</h3>
+
+                <label>
+                    <input
+                        class="toppings"
+                        type="checkbox"
+                        name="Topping"
+                        value="Pepperoni"
+                    >
+                    Pepperoni
+                </label>
+
+                <label>
+                    <input
+                        class="toppings"
+                        type="checkbox"
+                        name="Topping"
+                        value="Sausage"
+                    >
+                    Sausage
+                </label>
+
+                <label>
+                    <input
+                        class="toppings"
+                        type="checkbox"
+                        name="Topping"
+                        value="Canadian Bacon"
+                    >
+                    Canadian Bacon
+                </label>
+
+                <label>
+                    <input
+                        class="toppings"
+                        type="checkbox"
+                        name="Topping"
+                        value="Ground Beef"
+                    >
+                    Ground Beef
+                </label>
+
+                <label>
+                    <input
+                        class="toppings"
+                        type="checkbox"
+                        name="Topping"
+                        value="Anchovy"
+                    >
+                    Anchovy
+                </label>
+
+                <label>
+                    <input
+                        class="toppings"
+                        type="checkbox"
+                        name="Topping"
+                        value="Chicken"
+                    >
+                    Chicken
+                </label>
+
+                <label>
+                    <input
+                        class="toppings"
+                        type="checkbox"
+                        name="Topping"
+                        value="Salami"
+                    >
+                    Salami
+                </label>
+
+            </div>
+
+            <!-- Displays the completed order and total price. -->
+            <div id="cart">
+                <div id="showText"></div>
+                <div id="totalPrice"></div>
+            </div>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
