@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Basic jQuery</title>
+
+    <!-- Imports the jQuery library from Google. -->
+    <script
+        src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"
+    ></script>
+</head>
+
+<body>
+
+    <!-- jQuery will insert the webpage content here. -->
+
+    <script>
+        /*
+            The ready() method waits until the HTML document
+            has finished loading before executing the code.
+        */
+        $(document).ready(function () {
+
+            /*
+                The append() method creates the container,
+                heading and three paragraphs.
+            */
+            $("body").append(
+                "<div id='container'>" +
+                    "<div id='inner'>" +
+                        "<h1 id='jqueryHeading'>Basic jQuery</h1>" +
+                        "<p id='paragraph1'>Paragraph 1</p>" +
+                        "<p id='paragraph2'>Paragraph 2</p>" +
+                        "<p id='paragraph3'>Paragraph 3</p>" +
+                    "</div>" +
+                "</div>"
+            );
+
+            /*
+                The css() method changes the text colour
+                of Paragraph 2 to red.
+            */
+            $("#paragraph2").css({
+                "color": "red"
+            });
+
+            /*
+                When Paragraph 3 is clicked, the hide()
+                method hides the Basic jQuery heading.
+            */
+            $("#paragraph3").click(function () {
+                $("#jqueryHeading").hide();
+            });
+
+        });
+    </script>
+
+</body>
+
+</html>

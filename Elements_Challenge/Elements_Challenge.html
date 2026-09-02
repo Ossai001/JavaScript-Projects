@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Elements Challenge</title>
+</head>
+
+<body>
+
+    <h1>HTML DOM Elements Challenge</h1>
+
+    <p id="message">
+        Click the button to change this message.
+    </p>
+
+    <button
+        type="button"
+        onclick="changeMessage()"
+    >
+        Click Me
+    </button>
+
+    <script>
+        /*
+            Uses getElementById() to select the paragraph
+            and innerHTML to replace its content.
+        */
+        function changeMessage() {
+            document.getElementById("message").innerHTML =
+                "The message was successfully changed using JavaScript!";
+        }
+    </script>
+
+</body>
+
+</html>
